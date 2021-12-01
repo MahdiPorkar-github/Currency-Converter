@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         EditText amountEditText = (EditText) findViewById(R.id.amountEditText);
         String amount = amountEditText.getText().toString();
         String convertedAmount = (Integer.parseInt(amount) * 0.88) + "";
-        Toast.makeText(this, amount + "$ = " + convertedAmount + "€", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "$"+amount + " = €"+ convertedAmount, Toast.LENGTH_LONG).show();
     }
 
     @Override
